@@ -27,13 +27,6 @@ final routerProvider = Provider<GoRouter>((ref) {
             builder: (context, state) => const PlanningPage(),
           ),
           GoRoute(
-            path: '/trip/:id',
-            name: 'trip_detail',
-            builder: (context, state) => TripDetailPage(
-              tripId: state.pathParameters['id']!,
-            ),
-          ),
-          GoRoute(
             path: '/map',
             name: 'map',
             builder: (context, state) => const MapPage(),

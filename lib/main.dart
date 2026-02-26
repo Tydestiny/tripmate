@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'app/routes/app_router.dart';
 import 'app/theme/app_theme.dart';
+import 'features/planning/domain/providers/planning_provider.dart';
+
+final planningProvider = Provider<PlanningProvider>((ref) {
+  return PlanningProvider();
+});
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   runApp(
-    const ProviderScope(
+    ProviderScope(
       child: TripMateApp(),
     ),
   );
