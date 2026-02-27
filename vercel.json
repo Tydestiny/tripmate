@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "VITE_PUBLIC_DIR": "trip-web"
+    }
+  },
+  "buildCommand": "cd trip-web && npm run build",
+  "outputDirectory": "trip-web/dist"
+}
