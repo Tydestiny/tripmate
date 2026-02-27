@@ -5,6 +5,7 @@ import Trips from './pages/Trips'
 import Map from './pages/Map'
 import Food from './pages/Food'
 import Profile from './pages/Profile'
+import TripDetail from './pages/TripDetail'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="trips" element={<Trips />} />
+          <Route path="trips/:id" element={<TripDetail />} />
           <Route path="map" element={<Map />} />
           <Route path="food" element={<Food />} />
           <Route path="profile" element={<Profile />} />
